@@ -94,24 +94,26 @@ figure {
   background-color: #161c2d;
 }
 
-.container__footer a {
+.container__footer a,
+.container__footer strong,
+.container__footer p {
   color: white;
 }
 .footer-top {
   display: flex;
   flex-direction: row;
-  background-color: blue;
+
   justify-content: space-between;
 }
 .footer-bottom {
   display: flex;
   flex-direction: row;
-  background-color: blue;
+
   justify-content: space-between;
 }
 .footer-bottom ul {
   display: flex;
-  flex: row;
+  flex-direction: row;
 }
 .footer-top .footer-links {
   margin-left: 0;
