@@ -15,13 +15,18 @@
     </noscript>
     <div class="wrapper" id="wrapper">
         <header class="header">
-            <div class="container">
+            <div class="container container-header">
                 <div class="logo">
                     <a href="#">
                         <img src="./assets/logo.jpg" alt="Brainwave logo">
                     </a>
                 </div>
                 <nav class="navbar" aria-label="Main navigation">
+                    <button class="hamburger-menu" aria-label="Toggle navigation" type="button">
+                        <span class="hamburger-icon"></span>
+                        <span class="hamburger-icon"></span>
+                        <span class="hamburger-icon"></span>
+                    </button>
                     <div class="main-links">
                         <ul>
                             <li><a href="#">Demos</a></li>
@@ -30,13 +35,12 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
+                    <span class="vertical-line"></span>
                     <div class="auth-links">
                         <ul>
                             <li><a href="#">Sign In</a></li>
                             <li><a href="#">Sign Up</a></li>
                         </ul>
-
-
                     </div>
                 </nav>
             </div>
@@ -55,12 +59,14 @@
                         </header>
                     </div>
 
-                    <figure>
-                        <img src="./assets/hero-image.jpg" alt="Image of office">
-                    </figure>
+                    <div class="hero__image-container">
+                        <figure>
+                            <img src="./assets/hero-image.jpg" alt="Image of office">
+                        </figure>
+                    </div>
                 </div>
             </section>
-            <section class="content1">
+            <section class="content1-section">
                 <div class="container container-content1">
 
                     <div class="content1__left">
@@ -72,6 +78,7 @@
                         <p>We share common trends and strategies for improving your rental income and making sure you
                             stay in high demand of service.
                         </p>
+                        <span class="block"></span>
                         <p>
                             With lots of unique blocks, you can easily build a page without coding. Build your next
                             landing page. With lots of unique blocks, you can easily build a page without coding any
@@ -79,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content2">
+            <section class="content2-section">
                 <div class="container container-content2">
 
                     <div class="content2__images">
@@ -112,8 +119,8 @@
                     </div>
                 </div>
             </section>
-            <section class="team">
-                <div class="container">
+            <section class="team-section">
+                <div class="container team-container">
                     <div class="team__header">
                         <header>
                             <h2>Meet our team</h2>
@@ -194,7 +201,7 @@
                             </figure>
                         </li>
                         <li class="team__apply">
-                            <p>Are you interested?<span class="block"></span>
+                            <p>Interested to join our team?<span class="block"></span>
                                 <a href="#">Apply now<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.93335 2L14 7.63333L7.93335 13.2667" stroke="#473BF0"
@@ -218,22 +225,19 @@
             <div class="container container__footer">
                 <div class="footer-top">
                     <div class="footer-links">
-                        <strong>Company</strong>
+                        <ul>
+                            <li><strong class="footer__title">Company</strong></li>
+                            <li><a href="#">About US</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
 
-                        <nav aria-label="Footer Company navigation">
-                            <ul>
-                                <li><a href="#">About US</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Press</a></li>
-                            </ul>
-                        </nav>
                     </div>
 
                     <div class="footer-links">
-                        <strong>Product</strong>
-
                         <ul>
+                            <li><strong class="footer__title">Product</strong></li>
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">News</a></li>
@@ -243,35 +247,33 @@
 
                     </div>
                     <div class="footer-links">
-                        <strong>Services</strong>
+                        <ul>
+                            <li> <strong class="footer__title">Services</strong></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li><a href="#">SEO for Business</a></li>
+                            <li><a href="#">UI Design</a></li>
+                        </ul>
 
-                        <nav aria-label="Footer Service navigation">
-                            <ul>
-                                <li><a href="#">Digital Marketing</a></li>
-                                <li><a href="#">Content Writing</a></li>
-                                <li><a href="#">SEO for Business</a></li>
-                                <li><a href="#">UI Design</a></li>
-                            </ul>
-                        </nav>
                     </div>
 
                     <div class="footer-links">
-                        <strong>Legal</strong>
                         <ul>
+                            <li> <strong class="footer__title">Legal</strong></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms and Conditions</a></li>
                             <li><a href="#">Return Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer-links">
-                        <strong>Contact us</strong>
-
                         <ul>
+                            <li><strong class="footer__title">Contact us</strong></li>
                             <li><a href="mailto:support@brainwave.io">support@brainwave.io</a></li>
                             <li><a href="tel:13339434391435">+133-394-3439-1435</a></li>
                         </ul>
                     </div>
                 </div>
+                <hr class="footer-divider">
                 <div class="footer-bottom">
 
                     <div class="copyright">
@@ -329,7 +331,7 @@
                     </ul>
 
                 </div>
-            </div>
+                </di>
         </footer>
     </div>
     <a class="accessibility" href="#wrapper">Back to Top</a>
