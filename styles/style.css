@@ -397,3 +397,10 @@ ul {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 768px) {
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 108px;
+  }
+}
