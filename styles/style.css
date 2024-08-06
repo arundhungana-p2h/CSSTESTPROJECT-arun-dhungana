@@ -34,6 +34,7 @@ ol {
 
 .block {
   display: block;
+  margin-top: 5px;
 }
 
 .header {
@@ -78,6 +79,7 @@ ol {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: row;
 }
 
 .main-links li,
@@ -90,10 +92,16 @@ ol {
   text-decoration: none;
   color: #333;
   font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 800;
+
+  font-weight: 600;
+  padding: 12px 5px;
 }
 
+.auth-links ul li a:hover {
+  background-color: #473bf0;
+  /* border: 1px solid #473bf0; */
+  border-radius: 5px;
+}
 .vertical-line {
   width: 1px;
   height: 30px;
@@ -147,6 +155,16 @@ ol {
   margin: 0;
   padding: 10px;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .hero__content {
+    text-align: center;
+    width: 100%;
+    max-width: 620px;
+  }
+  .hero__content p {
+    font-size: 16px;
+  }
 }
 
 .content1-section {
@@ -272,7 +290,7 @@ ol {
 }
 
 .team__header p {
-  font-size: larger;
+  font-size: 16px;
   color: #707070;
   margin-bottom: 100px;
 }
@@ -330,6 +348,11 @@ ul {
     flex-wrap: wrap;
 
     gap: 30px;
+  }
+  .team__header {
+    text-align: center;
+    width: 100%;
+    max-width: 620px;
   }
 }
 
